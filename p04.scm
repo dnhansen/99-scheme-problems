@@ -7,7 +7,7 @@
 ; Using tail call
 (define (aux l acc)
   (if (null? l)
-      c
+      acc
       (aux (cdr l) (+ acc 1))))
 
 (define (my-length2 l)
