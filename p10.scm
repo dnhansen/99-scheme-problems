@@ -34,8 +34,6 @@
   (list (my-length l) (car l)))
 
 (define (my-encode l)
-  (if (null? l)
-      l
-      (my-map aux (my-pack l))))
+  (my-map aux (my-pack l)))
 
 (display (my-encode '(a a a a b c c a a d e e e e))) (newline)
